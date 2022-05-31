@@ -12,7 +12,7 @@ namespace Calculator.WebAPI.Controllers
     {
         private readonly ICalculatorService _calculatorService;
         private readonly ILogger _logger;
-
+        
         public EvaluatorController(ICalculatorService calculatorService , ILogger<EvaluatorController> logger)
         {
             _calculatorService=calculatorService;
