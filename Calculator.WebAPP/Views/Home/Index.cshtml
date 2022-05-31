@@ -1,0 +1,27 @@
+﻿@model Data
+@{
+    ViewBag.Title = "IndexPage";
+}
+<div class="card mt-5 col-sm-6 mx-auto">
+    <div class="card-header bg-dark text-white">
+        ADDITION
+    </div>
+    <div class="card-body">
+        <form asp-controller="Home" asp-action="Index">
+            <div class="mb-3 mt-3 row">
+                <label asp-for="Value1" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Value1" class="form-control" />
+                </div>
+            </div>
+            <div class="mb-3 mt-3 row">
+                <label asp-for="Value2" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Value2" class="form-control" />
+                </div>
+            </div>
+            <button class="btn btn-primary float-end" type="submit">ADD</button>
+        </form>
+    </div>
+</div>
+

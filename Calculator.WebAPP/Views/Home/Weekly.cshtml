@@ -1,0 +1,58 @@
+﻿@model Week
+@{
+    ViewBag.Title = "Weekly Walk History";
+}
+<div class="card mt-5 col-sm-6 mx-auto">
+    <div class="card-header bg-black text-white">
+        Your Weekly Walk
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3 mt-3 row">
+                <label asp-for="Sunday" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Sunday" class="form-control" />
+                </div>
+            </div>
+            <div class="mb-3 mt-3 row">
+                <label asp-for="Monday" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Monday" class="form-control" />
+                </div>
+            </div>
+            <div class="mb-3 mt-3 row">
+                <label asp-for="Tuesday" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Tuesday" class="form-control" />
+                </div>
+            </div>
+            <div class="mb-3 mt-3 row">
+                <label asp-for="Wednesday" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Wednesday" class="form-control" />
+                </div>
+            </div>
+            <div class="mb-3 mt-3 row">
+                <label asp-for="Thursday" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Thursday" class="form-control" />
+                </div>
+            </div>
+            <div class="mb-3 mt-3 row">
+                <label asp-for="Friday" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Friday" class="form-control" />
+                </div>
+            </div>
+             <div class="mb-3 mt-3 row">
+                <label asp-for="Saturday" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input asp-for="Saturday" class="form-control" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</div>
