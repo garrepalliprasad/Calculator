@@ -62,8 +62,8 @@ namespace Calculator.WebAPP.Controllers
             
             string xEncryptedString=utilities.CiphertextToBase64String(xEncrypted);
             string yEncryptedString=utilities.CiphertextToBase64String(yEncrypted);
-            //_logger.LogInformation("xEncryptedString=" + xEncryptedString);
-            //_logger.LogInformation("yEncryptedString=" + yEncryptedString);
+            _logger.LogInformation("xEncryptedString=" + xEncryptedString);
+            _logger.LogInformation("yEncryptedString=" + yEncryptedString);
             //EncodedData encodedData= _calculatorService.PostInput(xEncryptedString, yEncryptedString);
             EncodedData encodedData = new EncodedData() { Value1 = xEncryptedString, Value2 = yEncryptedString };
                         

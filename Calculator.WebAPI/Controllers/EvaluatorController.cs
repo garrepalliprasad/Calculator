@@ -40,7 +40,7 @@ namespace Calculator.WebAPI.Controllers
             _calculatorService.PostEncodedData(data);
             Result result = new Result() { EncodedStringResult=xyEncryptedResultString};
             _logger.LogInformation("xyEncryptedResult" + xyEncryptedResult.ToString());
-            //_logger.LogInformation("xyEncryptedResultString" + xyEncryptedResultString);
+            _logger.LogInformation("xyEncryptedResultString" + xyEncryptedResultString);
             return Ok(result);
         }
         /*[HttpGet]
