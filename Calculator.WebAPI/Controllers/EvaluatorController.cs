@@ -28,7 +28,7 @@ namespace Calculator.WebAPI.Controllers
         [Route("")]
         public IActionResult Add([FromBody] EncodedData data)
         {
-            _logger.LogInformation("In WebAPI");
+            _logger.LogInformation("In WEB API");
             Ciphertext xyEncryptedResult=new Ciphertext();
             Utilities utilities = new Utilities();
             SEALContext context = utilities.SEALContext;
